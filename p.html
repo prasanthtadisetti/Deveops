@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(){
+var x=document.getElementById("myselect");
+var option=document.createElement("option");
+option.text=document.getElementById("fruit").value;
+x.add(option);
+x.remove(option);
+document.getElementById("fruit").value="";
+}
+</script>
+</head>
+<body>
+<form>
+<select id="myselect"size="8">
+<option>Apple</option>
+<option>Orange</option>
+<option>Pear</option>
+<option>Banana</option>
+</select>
+</form>
+<br>
+<input type=text id=fruit>
+<button type="button" onclick= "myFunction()">Insert option</button>
+<button type="button" onclick= "myFunction()">Delete option</button>
+</body>
+</html>
+
